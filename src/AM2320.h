@@ -14,13 +14,13 @@
 
 class AM2320 {
   public:
-    AM2320(void);
-    void begin();
-    bool read();
-    float getHumidity();
-    float getTemperature();
+    //AM2320 () {};
+    void begin ();
+    bool read ();
+    float getHumidity ();
+    float getTemperature ();
   private:
-    uint16_t crc16(uint8_t *ptr, uint8_t len);
+    uint16_t crc16 (uint8_t *ptr, uint8_t len);
     uint8_t buf[8];
 };
 
